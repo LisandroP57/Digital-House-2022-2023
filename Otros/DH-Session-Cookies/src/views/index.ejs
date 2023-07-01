@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <%- include("partials/head") %>
+    <body class="<%- locals.user ? user.color : null %>">
+            <%- include("partials/header") %>
+            <div class="form">
+                  <% if (locals.user) { %>
+                        <div class="register-container">
+                              <div class="msg-info">
+                                    <p>Hola <%= user.name %></p>
+                                    <p>Elegiste el color: <%= user.color %></p>
+                                    <p>Tu email es: <%= user.email %></p>
+                                    <p>Tu edad es: <%= user.age %></p>
+                                    <a href="/user" class="user-btn"> Mi usuario</a>
+                                    <a href="/user/forget" class="btn-red">Olvidar mi color</a>
+                              </div>
+                        </div>
+                        <img src="/images/11.jpg" width="45%" />
+                  <% } else { %>
+                              <form action="/" method="post">
+                                    <div class="register-form">
+                                          <p class="p-top">Formulario de color!</p>
+                                          <div class="input-container">
+                                                <label class="datos-box">Nombre*</label>
+                                                <input class="input-style" type="text" name="name" placeholder="Ingrese su nombre" value="<%= locals.old && old.name %>">
+                                                <% if (locals.errors && errors.name) { %>
+                                                      <small class="text-danger"><%= errors.name.msg %> </small>
+                                                <% } %>
+                                          </div>
+                                          <div class="input-container">
+                                                <label for="select" class="form-label">Color</label>
+                                                <select class="select" id="select" aria-label="Default select example" name="color">
+                                                      <option value="violeta">Violeta</option>
+                                                      <option value="naranja">Naranja</option>
+                                                      <option value="verde">Verde</option>
+                                                      <option value="celeste">Celeste</option>
+                                                      <option value="negro">Negro</option>
+                                                      <option value="marron">Marron</option>
+                                                </select>
+                                                <div class="input-container"><span class="text-danger small"><%= locals.errors && locals.errors.backgroundColor ? errors.backgroundColor.msg : null %> </span></div>
+                                          </div>
+                                          <div class="input-container">
+                                                <label class="datos-box">Email*</label>
+                                                <input class="input-style" type="email" name="email" placeholder="Ingrese su email" value="<%= locals.old && old.email %>">
+                                                <% if(locals.errors && errors.email) { %>
+                                                      <small class="text-danger"><%= errors.email.msg %> </small>
+                                                <% } %>
+                                          </div>
+                                          <div class="input-container">
+                                                <label class="datos-box">Edad*</label>
+                                                <input class="input-style" type="age" name="age" placeholder="Ingre su edad"value="<%= locals.old && old.edad %>">
+                                                <% if(locals.errors && errors.age) { %>
+                                                      <small class="text-danger"><%= errors.age.msg %> </small>
+                                                <% } %>
+                                          </div>
+                                          <div class="input-check">
+                                                <div class="form-check">
+                                                      <input class="form-check-input" type="checkbox"  id="flexCheckDefault" name="remember">
+                                                      <label class="form-check-label" for="flexCheckDefault">
+                                                      Recordar color
+                                                      </label>
+                                                </div>
+                                          </div>
+                                          <div class="btn">
+                                                <button class="button-container" type="submit">Enviar</button>
+                                          </div>
+                                    </div>
+                              </form>
+                        <% } %>
+                  </div>
+            </body>
+</html>

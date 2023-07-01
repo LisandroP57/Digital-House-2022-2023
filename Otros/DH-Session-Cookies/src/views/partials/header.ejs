@@ -1,0 +1,10 @@
+<header>
+    <h1>Bienvenido! A continuacion elija un color</h1>
+    <div class="header-btns">
+        <% if (locals.user) { %>
+            <p><a class="home" href="/user">Mi Usuario</a></p><br>
+        <% } else { %>
+            <p><a class="home" href="/">Inicio</a></p>
+        <% } %>
+    </div>
+</header>

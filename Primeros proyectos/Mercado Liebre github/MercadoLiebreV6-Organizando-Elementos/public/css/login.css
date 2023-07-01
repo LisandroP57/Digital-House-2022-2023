@@ -1,0 +1,50 @@
+.main_login {
+    margin: 0 auto;
+    max-width: 70%;
+    display: flex;
+    justify-content: center; 
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 0.6rem;
+}
+
+.user-box, .pass-box {
+    margin: 1rem 0;
+}
+
+.user-box input, .pass-box input {
+    border: none;
+    border-radius: 0.4rem;
+    padding: 0.6rem;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+.send-button button{
+    border: none;
+    border-radius: 0.4rem;
+    background-color: rgb(173, 173, 186);
+    width: 100%;
+    padding: 0.5rem;
+    margin: 1.2rem 0;
+    transition: 1s;
+}
+
+.send-button button:hover {
+    background-color: #0022AA;
+}
+
+.send-button a {
+    font-size: 0.9rem;
+    color: white;
+}
+
+.main_login p {
+    display: none;
+    color: red;
+    padding: 0.5rem;
+}

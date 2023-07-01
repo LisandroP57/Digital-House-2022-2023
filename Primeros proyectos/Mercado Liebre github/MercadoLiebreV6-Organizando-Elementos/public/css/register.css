@@ -1,0 +1,51 @@
+.main_register {
+    margin: 0 auto;
+    max-width: 70%;
+    display: flex;
+    justify-content: center; 
+}
+
+.form-register {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 0.6rem;
+}
+
+.box-form {
+    margin: 1rem 0rem;
+}
+
+.box-form input{
+    border: none;
+    border-radius: 0.4rem;
+    padding: 0.6rem;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+main form p {
+    text-align: left;
+    font-weight: 600;
+}
+
+.perfil {
+    margin: 1.2rem 0 2rem 0;
+}
+
+.perfil input, label{
+    margin-right: 2rem;
+}
+
+.options {
+    margin: 1rem 0;
+}
+
+.options input {
+    margin-right: 1rem;
+}
+
+.reset {
+    display: flex;
+    justify-content: center;
+}

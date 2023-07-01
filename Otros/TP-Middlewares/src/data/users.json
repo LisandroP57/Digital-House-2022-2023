@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "firstName": "Greta",
+        "lastName": "null",
+        "email": "pmilliken0@shutterfly.com",
+        "password":"hhAVG5",
+        "category":"Customer",
+        "image":""
+    },
+    {
+        "id": 2,
+        "firstName": "Riky",
+        "lastName": "null",
+        "email": "pmilliken0@shutterfly.com",
+        "password":"hhAVG5",
+        "category":"Customer",
+        "image":""
+    },
+    {
+        "id": 3,
+        "firstName": "Cami",
+        "lastName": "null",
+        "email": "pmiasdken0@shutterfly.com",
+        "password":"hhAVG5",
+        "category":"Customer",
+        "image":""
+    },
+    {
+        "id": 4,
+        "firstName": "Fran",
+        "lastName": "null",
+        "email": "pmillasdfdsiken0@shutterfly.com",
+        "password":"hhAVG5",
+        "category":"Customer",
+        "image":""
+    },
+    {
+        "id": 5,
+        "firstName": "Maxi",
+        "lastName": "null",
+        "email": "saddasdsa@shutterfly.com",
+        "password":"hhAVG5",
+        "category":"Customer",
+        "image":""
+    }
+]

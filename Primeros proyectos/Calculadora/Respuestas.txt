@@ -1,0 +1,7 @@
+a. ¿Qué hubiese sucedido si, en vez de generar un archivo por cada operación
+matemática, hubiésemos programado todo en un mismo archivo?
+b. ¿Por qué el mejor camino es generar distintos archivos y luego requerirlos en uno solo?
+c. ¿Será esta metodología de trabajo una constante de aquí en adelante?
+
+En realidad el código podría funcionar de igual manera, pero para una mejor organización, prolijidad y profesionalidad se generó un archivo por cada operación, además de poner en práctica lo visto de module.exports y process.argv, que sin ponerlos en uso serian obsoletos en este tp de calculadora.
+Yo creo que sí, que va a ser una metodología constante ya que el trabajo en equipo es fundamental en la carrera, así como poder cooperar entre todos, usando así también metodologías de trabajo como SCRUM, trabajando colaborativamente, e ir así "desfragmentando" nuestro código en partes más organizadas y fáciles de acceder para quien necesite chequear y editar los códigos.

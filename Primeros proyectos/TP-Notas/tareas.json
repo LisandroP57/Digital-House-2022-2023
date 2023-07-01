@@ -1,0 +1,8 @@
+[
+    { "titulo": "Levantarse", "estado": "terminada" },
+    { "titulo": "Desayunar", "estado": "terminada" },
+    { "titulo": "Asistir a la clase", "estado": "en progreso" },
+    { "titulo": "Almorzar", "estado": "pendiente" },
+    { "titulo": "Estudiar", "estado": "en progreso" },
+    { "titulo": "Dormir", "estado": "pendiente" }
+  ]

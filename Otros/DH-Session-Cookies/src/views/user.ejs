@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("partials/head") %>
+
+<body  class="<%- locals.user ? user.color : null %>">
+      <%- include("partials/header") %>
+
+      <div id="userPage">
+            <div class="user-msg">
+                  <p>Que tal<b><%= name %> </b> gracias por tu visita!.</p>
+                  <a href="/user/forget" class="btn btn-danger ">Borrar color</a>
+            </div>
+            <img src="/images/10.jpg" width="45%" >
+      </div>
+</body>
+</html>
